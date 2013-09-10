@@ -22,19 +22,6 @@ Newjobcombo::Application.configure do
   #   location: '/usr/sbin/sendmail',
   #   arguments: '-i -t'
   # }
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_options = {from: 'ronaldo@jobconvo.com'}
-  
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
-    domain:               'jobconvo.com',
-    user_name:            'ronaldo@jobconvo.com',
-    password:             'musica123',
-    authentication:       'plain',
-    enable_starttls_auto: true  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
