@@ -1,0 +1,5371 @@
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (2.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20130909165013)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "usertype" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20130909165013"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 13:55:54 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.9ms)
+  Rendered users/_recruiter_form.html.erb (62.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.4ms)
+  Rendered users/new.html.erb within layouts/application (84.6ms)
+Completed 200 OK in 2324ms (Views: 2263.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (4.2ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (12.8ms)
+  Rendered users/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 107ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 13:55:57 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 13:56:17 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.6ms)
+  Rendered users/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 13:56:17 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 13:56:17 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 13:56:17 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 13:56:17 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 13:56:17 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 13:56:17 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 13:56:17 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 13:56:17 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 13:56:17 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 13:56:17 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 13:56:53 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (21.2ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.5ms)
+  Rendered users/new.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 13:56:53 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 13:56:53 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 13:56:53 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 13:56:53 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 13:56:53 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 13:56:53 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 13:56:53 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 13:56:53 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 13:56:53 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 13:56:53 -0300
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-09 13:57:00 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uOu3K4wR5a5/uOm6BVN313GK5ZTzyvcroE/QmgIbWM=", "user"=>{"name"=>"Eitor", "email"=>"email@eitor.com", "usertype"=>"2"}, "commit"=>"Submit"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email@eitor.com') LIMIT 1[0m
+  [1m[35mSQL (25.7ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "updated_at", "usertype") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 09 Sep 2013 16:57:00 UTC +00:00], ["email", "email@eitor.com"], ["name", "Eitor"], ["updated_at", Mon, 09 Sep 2013 16:57:00 UTC +00:00], ["usertype", "2"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/success
+Completed 302 Found in 118ms (ActiveRecord: 27.8ms)
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 13:57:00 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 13:57:01 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 13:57:01 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 13:57:01 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 13:57:01 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 13:57:01 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 13:57:01 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 13:57:01 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 13:57:01 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 13:57:01 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 13:57:01 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 13:58:30 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (21.2ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.1ms)
+  Rendered users/new.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 39ms (Views: 32.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 13:58:30 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 13:58:30 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 13:58:30 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 13:58:30 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 13:58:30 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 13:58:30 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 13:58:30 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 13:58:30 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 13:58:30 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 13:58:30 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 13:58:54 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.8ms)
+  Rendered users/_recruiter_form.html.erb (63.2ms)
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/_company_form.html.erb (4.3ms)
+  Rendered users/new.html.erb within layouts/application (74.2ms)
+Completed 200 OK in 160ms (Views: 129.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 13:58:55 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 13:58:55 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 13:58:55 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 13:58:55 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 13:58:55 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 13:58:55 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 13:58:55 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 13:58:55 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 13:58:55 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 13:58:55 -0300
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-09 13:59:07 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uOu3K4wR5a5/uOm6BVN313GK5ZTzyvcroE/QmgIbWM=", "user"=>{"name"=>"Wilian", "email"=>"wilian@email.com", "usertype"=>"2 - recruiter"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('wilian@email.com') LIMIT 1[0m
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "updated_at", "usertype") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 09 Sep 2013 16:59:08 UTC +00:00], ["email", "wilian@email.com"], ["name", "Wilian"], ["updated_at", Mon, 09 Sep 2013 16:59:08 UTC +00:00], ["usertype", "2 - recruiter"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/success
+Completed 302 Found in 23ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 13:59:08 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 13:59:08 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 13:59:08 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 13:59:08 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 13:59:08 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 13:59:08 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 13:59:08 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 13:59:08 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 13:59:08 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 13:59:08 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 13:59:08 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:00:41 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (6.6ms)
+  Rendered users/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:00:41 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (46.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 129ms (Views: 127.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:00:41 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:00:41 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:00:41 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:00:41 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:00:41 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:00:41 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:00:41 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:00:41 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:00:41 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:00:41 -0300
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-09 14:00:53 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uOu3K4wR5a5/uOm6BVN313GK5ZTzyvcroE/QmgIbWM=", "user"=>{"name"=>"Roberto", "email"=>"robet@email.com", "usertype"=>"1 - company"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('robet@email.com') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "updated_at", "usertype") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 09 Sep 2013 17:00:53 UTC +00:00], ["email", "robet@email.com"], ["name", "Roberto"], ["updated_at", Mon, 09 Sep 2013 17:00:53 UTC +00:00], ["usertype", "1 - company"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/success
+Completed 302 Found in 11ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 14:00:53 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:00:53 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:00:53 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:00:53 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:00:53 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:00:53 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:00:53 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:00:53 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:00:53 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:00:53 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:00:53 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:30:02 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (10.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (77.8ms)
+Completed 200 OK in 151ms (Views: 150.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:30:02 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:30:02 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:30:02 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:30:02 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:30:02 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:30:02 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:30:02 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:30:02 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:30:02 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:30:02 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:30:02 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered users/_recruiter_form.html.erb (5.0ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:37:07 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 124ms
+
+ActionView::Template::Error (Missing partial layouts/header with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/ronaldobahia/ruby-sites/newjobcombo/app/views"
+):
+     8: </head>
+     9: <body>
+    10: 	<div id="wrapper" class="clearFix">
+    11: 		<%= render 'layouts/header' %>
+    12: 		<%= yield %>
+    13: 	</div>
+    14: 
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___171281519757287466_70185311442380'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:37:23 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:37:23 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:37:23 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:37:23 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:37:23 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:37:23 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:37:23 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:37:23 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:37:23 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:37:23 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:37:23 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:38:17 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.2ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:38:17 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:38:17 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:38:17 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:38:17 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:38:17 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:38:17 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:38:17 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:38:17 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:38:17 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:38:17 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:39:40 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.9ms)
+  Rendered users/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:39:41 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:39:41 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:39:41 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:39:41 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:39:41 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:39:41 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:39:41 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:39:41 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:39:41 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:39:41 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:41:15 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (1.9ms)
+  Rendered users/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:41:15 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:41:15 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:41:15 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:41:15 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:41:15 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:41:15 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:41:15 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:41:15 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:41:15 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:41:15 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:42:17 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.2ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:42:17 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:17 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:42:17 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:17 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:17 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:42:17 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:17 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:42:17 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:17 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:17 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:42:19 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:42:19 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:42:20 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:20 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:42:20 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:42:20 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:20 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:20 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:20 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:20 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:20 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:42:36 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered users/_company_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:42:36 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:42:36 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:42:36 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:36 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:36 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:42:36 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:36 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:36 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:36 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:42:36 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:43:11 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:43:11 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:43:11 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:43:11 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:43:11 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:43:11 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:43:11 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:43:11 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:43:11 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:43:11 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:43:11 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:43:13 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:43:13 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:43:13 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:43:13 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:43:13 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:43:13 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:43:13 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:43:13 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:43:13 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:43:13 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:43:13 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:44:21 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (1.9ms)
+  Rendered users/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:44:22 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:44:22 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:44:22 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:44:22 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:44:22 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:44:22 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:44:22 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:44:22 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:44:22 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:44:22 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:44:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (29.6ms)
+  Rendered users/_recruiter_form.html.erb (80.2ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (4.4ms)
+  Rendered users/new.html.erb within layouts/application (128.8ms)
+Completed 200 OK in 357ms (Views: 296.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:44:44 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:44:44 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:44:44 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:44:44 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:44:44 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:44:44 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:44:44 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:44:44 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:44:44 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:44:45 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:46:32 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.0ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:46:33 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:46:33 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:46:33 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:46:33 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:46:33 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:46:33 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:46:33 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:46:33 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:46:33 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:46:33 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:46:46 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.5ms)
+  Rendered users/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:46:46 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:46:46 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:46:46 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:46:46 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:46:46 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:46:46 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:46:46 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:46:46 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:46:46 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:46:46 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:47:03 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:47:04 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:04 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:04 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:47:04 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:47:04 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:04 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:04 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:04 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:04 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:47:04 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:47:19 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.0ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:47:19 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:19 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:19 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:19 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:47:19 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:19 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:19 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:47:19 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:19 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:47:19 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:47:41 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.8ms)
+  Rendered users/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:47:41 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:47:41 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:47:41 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:41 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:41 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:47:41 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:41 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:41 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:41 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:47:41 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:48:35 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.6ms)
+  Rendered users/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:48:35 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:48:35 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:48:35 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:48:35 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:48:35 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:48:35 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:48:35 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:48:35 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:48:35 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:48:35 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:49:40 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:49:40 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:49:40 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:49:40 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:49:40 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:49:40 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:49:40 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:49:40 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:49:40 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:49:40 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:49:40 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:50:02 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.1ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (1.9ms)
+  Rendered users/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:02 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:02 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:02 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:02 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:02 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:02 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:50:02 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:02 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:02 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:50:02 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:51:38 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:38 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:38 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:38 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:38 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:38 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:38 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:38 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:38 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:38 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:38 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:51:41 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (1.9ms)
+  Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:41 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:41 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:41 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:41 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:41 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:41 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:41 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:41 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:41 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:41 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:51:42 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (2.2ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (1.8ms)
+  Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:42 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:42 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:42 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:42 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:42 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:42 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:42 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:42 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:42 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:42 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:51:56 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.0ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (1.8ms)
+  Rendered users/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:56 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:56 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:56 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:56 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:56 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:56 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:56 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:51:56 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:56 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:51:56 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 14:52:28 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (1.8ms)
+  Rendered users/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 14:52:28 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 14:52:28 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 14:52:28 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 14:52:28 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 14:52:28 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 14:52:28 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 14:52:28 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 14:52:28 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 14:52:28 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 14:52:28 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 15:08:18 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.2ms)
+  Rendered users/_recruiter_form.html.erb (31.0ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.4ms)
+  Rendered users/new.html.erb within layouts/application (82.0ms)
+Completed 200 OK in 170ms (Views: 138.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:19 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 15:08:19 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 15:08:19 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 15:08:19 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:08:19 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:19 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:19 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:19 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:19 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:19 -0300
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-09 15:08:34 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uOu3K4wR5a5/uOm6BVN313GK5ZTzyvcroE/QmgIbWM=", "user"=>{"name"=>"Olivia", "email"=>"olivia@email.com", "usertype"=>"1 - company"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('olivia@email.com') LIMIT 1[0m
+  [1m[35mSQL (62.6ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "updated_at", "usertype") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 09 Sep 2013 18:08:34 UTC +00:00], ["email", "olivia@email.com"], ["name", "Olivia"], ["updated_at", Mon, 09 Sep 2013 18:08:34 UTC +00:00], ["usertype", "1 - company"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/success
+  Rendered user_mailer/registration_confirmation.html.erb (0.6ms)
+  Rendered user_mailer/registration_confirmation.text.erb (0.4ms)
+
+Sent mail to olivia@email.com (61.3ms)
+Date: Mon, 09 Sep 2013 15:08:35 -0300
+From: ronaldo@jobconvo.com
+To: olivia@email.com
+Message-ID: <522e0ea37e6a5_102853ff17869a97075775@Ronaldo-Bahia.local.mail>
+Subject: Registered with JobCombo!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_522e0ea37ada6_102853ff17869a97075685";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_522e0ea37ada6_102853ff17869a97075685
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks for registering! 
+
+We are excited to have you with us on this journey.
+
+You will be the first to know when we launch.
+----==_mimepart_522e0ea37ada6_102853ff17869a97075685
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<body>
+<p>Thanks for registering!</p>
+
+<p>We are excited to have you with us on this journey.</p>
+
+<p>You will be the first to know when we launch.</p>
+</body>
+----==_mimepart_522e0ea37ada6_102853ff17869a97075685--
+
+Completed 302 Found in 1107ms (ActiveRecord: 64.6ms)
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 15:08:35 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 15:08:35 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:35 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 15:08:35 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:35 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:35 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 15:08:35 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:35 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:35 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:08:35 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:35 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 15:08:52 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (4.2ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (5.4ms)
+  Rendered users/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 15:08:52 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered users/_company_form.html.erb (5.5ms)
+  Rendered users/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 15:08:52 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:08:52 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 15:08:52 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:52 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:52 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:52 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:52 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 15:08:52 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:52 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 15:08:52 -0300
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-09 15:09:05 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uOu3K4wR5a5/uOm6BVN313GK5ZTzyvcroE/QmgIbWM=", "user"=>{"name"=>"Esteves", "email"=>"bahiamartins@hotmail.com", "usertype"=>"2 - recruiter"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('bahiamartins@hotmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "updated_at", "usertype") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 09 Sep 2013 18:09:05 UTC +00:00], ["email", "bahiamartins@hotmail.com"], ["name", "Esteves"], ["updated_at", Mon, 09 Sep 2013 18:09:05 UTC +00:00], ["usertype", "2 - recruiter"]]
+  [1m[36m (41.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/success
+  Rendered user_mailer/registration_confirmation.html.erb (0.1ms)
+  Rendered user_mailer/registration_confirmation.text.erb (0.1ms)
+
+Sent mail to bahiamartins@hotmail.com (13.1ms)
+Date: Mon, 09 Sep 2013 15:09:05 -0300
+From: ronaldo@jobconvo.com
+To: bahiamartins@hotmail.com
+Message-ID: <522e0ec1e5d64_102853ff17863b97075977@Ronaldo-Bahia.local.mail>
+Subject: Registered with JobCombo!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_522e0ec1e3ccc_102853ff17863b97075889";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_522e0ec1e3ccc_102853ff17863b97075889
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thanks for registering! 
+
+We are excited to have you with us on this journey.
+
+You will be the first to know when we launch.
+----==_mimepart_522e0ec1e3ccc_102853ff17863b97075889
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<body>
+<p>Thanks for registering!</p>
+
+<p>We are excited to have you with us on this journey.</p>
+
+<p>You will be the first to know when we launch.</p>
+</body>
+----==_mimepart_522e0ec1e3ccc_102853ff17863b97075889--
+
+Completed 302 Found in 89ms (ActiveRecord: 42.7ms)
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 15:09:05 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:09:06 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:09:06 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:09:06 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 15:09:06 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 15:09:06 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:09:06 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 15:09:06 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 15:09:06 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:09:06 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 15:09:06 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 15:15:55 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (75.4ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (79.1ms)
+Completed 200 OK in 93ms (Views: 85.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 15:15:55 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (6.8ms)
+  Rendered users/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 15:15:55 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:15:55 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 15:15:55 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 15:15:55 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:15:55 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:15:55 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:15:55 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 15:15:55 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 15:15:55 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:15:55 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:15:56 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 15:15:56 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 15:15:56 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:15:56 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:15:56 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:15:56 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:15:56 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 15:15:56 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 15:15:56 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 15:15:56 -0300
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-09 15:16:05 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uOu3K4wR5a5/uOm6BVN313GK5ZTzyvcroE/QmgIbWM=", "user"=>{"name"=>"Caroli", "email"=>"bahiamartins@hotmail.com", "usertype"=>"1 - company"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('bahiamartins@hotmail.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (1.2ms)
+  Rendered users/_recruiter_form.html.erb (4.5ms)
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/_company_form.html.erb (3.3ms)
+  Rendered users/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 103ms (Views: 19.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 15:16:05 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 15:16:05 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:16:05 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:16:05 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 15:16:05 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:16:05 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 15:16:06 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:16:06 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 15:16:06 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:16:06 -0300
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-09 15:17:33 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uOu3K4wR5a5/uOm6BVN313GK5ZTzyvcroE/QmgIbWM=", "user"=>{"name"=>"Caroli", "email"=>"ronaldo@via6.com", "usertype"=>"2 - recruiter"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('ronaldo@via6.com') LIMIT 1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "updated_at", "usertype") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 09 Sep 2013 18:17:33 UTC +00:00], ["email", "ronaldo@via6.com"], ["name", "Caroli"], ["updated_at", Mon, 09 Sep 2013 18:17:33 UTC +00:00], ["usertype", "2 - recruiter"]]
+  [1m[35m (51.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/success
+Completed 500 Internal Server Error in 61ms
+
+SyntaxError (/Users/ronaldobahia/ruby-sites/newjobcombo/app/mailers/user_mailer.rb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+		    template_path: 'user_mailer',
+		                 ^
+/Users/ronaldobahia/ruby-sites/newjobcombo/app/mailers/user_mailer.rb:9: syntax error, unexpected ',', expecting keyword_end
+/Users/ronaldobahia/ruby-sites/newjobcombo/app/mailers/user_mailer.rb:10: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/users_controller.rb:11:in `create'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (36.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (63.7ms)
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "usertype" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (2.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (2.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130909165013')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 15:19:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.1ms)
+  Rendered users/_recruiter_form.html.erb (65.2ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.7ms)
+  Rendered users/new.html.erb within layouts/application (77.2ms)
+Completed 200 OK in 169ms (Views: 137.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:19:59 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 15:19:59 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:19:59 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:19:59 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 15:19:59 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 15:19:59 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:19:59 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 15:19:59 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 15:19:59 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:19:59 -0300
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-09 15:20:07 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uOu3K4wR5a5/uOm6BVN313GK5ZTzyvcroE/QmgIbWM=", "user"=>{"name"=>"Ron", "email"=>"bahiamartins@hotmail.com", "usertype"=>"1 - company"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('bahiamartins@hotmail.com') LIMIT 1[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "updated_at", "usertype") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 09 Sep 2013 18:20:07 UTC +00:00], ["email", "bahiamartins@hotmail.com"], ["name", "Ron"], ["updated_at", Mon, 09 Sep 2013 18:20:07 UTC +00:00], ["usertype", "1 - company"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/success
+Completed 500 Internal Server Error in 42ms
+
+SyntaxError (/Users/ronaldobahia/ruby-sites/newjobcombo/app/mailers/user_mailer.rb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+		    template_path: 'user_mailer',
+		                 ^
+/Users/ronaldobahia/ruby-sites/newjobcombo/app/mailers/user_mailer.rb:9: syntax error, unexpected ',', expecting keyword_end
+/Users/ronaldobahia/ruby-sites/newjobcombo/app/mailers/user_mailer.rb:10: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/users_controller.rb:11:in `create'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.5ms)
+  [1m[36m (3.1ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "usertype" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130909165013')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 15:21:28 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.1ms)
+  Rendered users/_recruiter_form.html.erb (63.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.4ms)
+  Rendered users/new.html.erb within layouts/application (73.5ms)
+Completed 200 OK in 162ms (Views: 131.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:29 -0300
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-09 15:21:36 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uOu3K4wR5a5/uOm6BVN313GK5ZTzyvcroE/QmgIbWM=", "user"=>{"name"=>"Eitor", "email"=>"bahiamartins@hotmail.com", "usertype"=>"1 - company"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('bahiamartins@hotmail.com') LIMIT 1[0m
+  [1m[35mSQL (4.6ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "updated_at", "usertype") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 09 Sep 2013 18:21:36 UTC +00:00], ["email", "bahiamartins@hotmail.com"], ["name", "Eitor"], ["updated_at", Mon, 09 Sep 2013 18:21:36 UTC +00:00], ["usertype", "1 - company"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/success
+Completed 302 Found in 26ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 15:21:36 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:21:37 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 15:21:37 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:37 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 15:21:37 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:37 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:37 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:37 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 15:21:37 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:37 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:21:37 -0300
+  [1m[36m (12.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "usertype" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (14.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (3.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130909165013')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 15:32:23 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.0ms)
+  Rendered users/_recruiter_form.html.erb (63.9ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.2ms)
+  Rendered users/new.html.erb within layouts/application (74.2ms)
+Completed 200 OK in 160ms (Views: 129.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 15:32:23 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (5.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (4.8ms)
+  Rendered users/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 15:32:24 -0300
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-09 15:32:31 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uOu3K4wR5a5/uOm6BVN313GK5ZTzyvcroE/QmgIbWM=", "user"=>{"name"=>"Eitor", "email"=>"bahiamartins@hotmail.com", "usertype"=>"1 - company"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('bahiamartins@hotmail.com') LIMIT 1[0m
+  [1m[35mSQL (4.4ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "updated_at", "usertype") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 09 Sep 2013 18:32:31 UTC +00:00], ["email", "bahiamartins@hotmail.com"], ["name", "Eitor"], ["updated_at", Mon, 09 Sep 2013 18:32:31 UTC +00:00], ["usertype", "1 - company"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 55ms
+
+SyntaxError (/Users/ronaldobahia/ruby-sites/newjobcombo/app/mailers/user_mailer.rb:6: unknown regexp options - lcalht):
+  app/controllers/users_controller.rb:10:in `create'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 16:35:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.0ms)
+  Rendered users/_recruiter_form.html.erb (69.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (4.7ms)
+  Rendered users/new.html.erb within layouts/application (81.7ms)
+Completed 200 OK in 180ms (Views: 147.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:17 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:17 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:17 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:17 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:17 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:17 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:17 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:17 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:17 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:17 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 16:35:20 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:20 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:20 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:20 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:20 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:20 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:20 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:20 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:20 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:20 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:20 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 16:35:40 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.9ms)
+  Rendered users/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:40 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:40 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:40 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:35:40 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:40 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:40 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:40 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:40 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:40 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:35:40 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 16:40:41 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (4.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 1932ms (Views: 1931.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 16:40:43 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 16:40:43 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:43 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 16:40:43 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:43 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:43 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:43 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:40:43 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:43 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 16:40:43 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:23 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 16:41:54 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.6ms)
+  Rendered users/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:54 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:54 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:54 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:54 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:54 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 16:41:54 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:54 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:54 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:54 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 16:41:54 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:31:31 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.9ms)
+  Rendered users/_recruiter_form.html.erb (30.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (4.0ms)
+  Rendered users/new.html.erb within layouts/application (42.6ms)
+Completed 200 OK in 216ms (Views: 182.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:31:31 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:31:31 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:31:31 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:31:31 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:31:31 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:31:31 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:31:31 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:31:31 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:31:32 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:31:32 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:31:34 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.3ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:31:34 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:31:34 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:31:34 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:31:34 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:31:34 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:31:34 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:31:34 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:31:34 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:31:34 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:31:34 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:34:59 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (18.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 2153ms (Views: 2151.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:35:01 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:01 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:35:01 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:01 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:01 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:35:01 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:01 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:01 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:35:01 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:01 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:35:49 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.2ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:35:49 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:49 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:35:49 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:35:49 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:49 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:49 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:49 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:49 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:35:49 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:49 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:35:51 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:35:51 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:51 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:51 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:51 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:51 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:35:51 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:35:51 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:52 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:35:52 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:35:52 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:36:30 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:36:31 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:36:31 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:36:31 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:36:31 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:36:31 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:36:31 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:36:31 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:36:31 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:36:31 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:36:31 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:37:43 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (4.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (9.5ms)
+  Rendered users/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 1887ms (Views: 1886.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:37:45 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:37:45 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:37:45 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:37:45 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:37:45 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:37:45 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:37:45 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:37:45 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:37:45 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:37:45 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:38:58 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 1856ms (Views: 1854.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:39:00 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:39:00 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:39:00 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:39:00 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:39:00 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:39:00 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:39:00 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:39:00 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:39:00 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:39:00 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:40:00 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (1.9ms)
+  Rendered users/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 1863ms (Views: 1861.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:40:02 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:40:02 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:40:02 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:40:02 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:40:02 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:40:02 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:40:02 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:40:02 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:40:02 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:40:02 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:41:20 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.2ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:41:20 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:41:20 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:41:20 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:41:20 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:41:20 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:41:20 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:41:20 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:41:20 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:41:20 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:41:20 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:41:41 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.5ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:41:41 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:41:41 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:41:41 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:41:41 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:41:41 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:41:41 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:41:41 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:41:41 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:41:41 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:41:41 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:42:45 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (6.1ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:42:45 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:42:45 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:42:45 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:42:45 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:42:45 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:42:45 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:42:45 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:42:45 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:42:45 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:42:45 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:43:01 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.1ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:43:01 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:43:01 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:01 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:01 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:01 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:01 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:43:01 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:01 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:01 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:43:01 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:43:44 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.5ms)
+  Rendered users/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:43:44 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:43:44 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:43:44 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:44 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:44 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:44 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:43:44 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:44 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:44 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:44 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:43:57 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:43:58 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:43:58 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:43:58 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:43:58 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:58 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:58 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:58 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:58 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:58 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:43:58 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:45:14 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.3ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:14 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:14 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:14 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:14 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:14 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:14 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:14 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:14 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:14 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:14 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:45:28 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:28 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:28 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:28 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:28 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:28 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:28 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:28 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:28 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:28 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:28 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:45:37 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:37 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:37 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:37 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:37 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:37 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:37 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:37 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:37 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:37 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:37 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:45:47 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (5.3ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:47 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:47 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:47 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:47 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:47 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:47 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:47 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:47 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:47 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:47 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:45:59 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.1ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (1.9ms)
+  Rendered users/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:59 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:59 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:59 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:59 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:59 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:59 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:59 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:45:59 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:59 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:45:59 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:46:32 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.9ms)
+  Rendered users/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:46:32 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:46:32 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:46:32 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:46:32 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:46:32 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:46:32 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:46:32 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:46:32 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:46:32 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:46:32 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:46:41 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:46:41 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:46:41 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:46:41 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:46:41 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:46:41 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:46:41 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:46:41 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:46:41 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:46:41 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:46:41 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:50:17 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:50:17 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:50:18 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:50:18 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:50:18 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:50:18 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:50:18 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:50:18 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:50:18 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:50:18 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:50:18 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:50:36 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (1.8ms)
+  Rendered users/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:50:36 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:50:36 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:50:36 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:50:36 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:50:36 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:50:36 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:50:36 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:50:36 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:50:36 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:50:36 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:51:15 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.8ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:51:15 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:51:15 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:51:15 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:51:15 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:51:15 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:51:15 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:51:15 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:51:15 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:51:15 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:51:15 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:51:24 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:51:24 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:51:24 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:51:24 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:51:24 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:51:24 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:51:24 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:51:24 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:51:24 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:51:24 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:51:24 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:52:22 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.2ms)
+  Rendered users/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:52:22 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:52:22 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:52:22 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:52:22 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:52:22 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:52:22 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:52:22 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:52:22 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:52:22 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:52:22 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:52:33 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (73.0ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (27.1ms)
+  Rendered users/new.html.erb within layouts/application (102.6ms)
+Completed 200 OK in 110ms (Views: 108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:52:33 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:52:33 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:52:33 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:52:33 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:52:33 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:52:33 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:52:33 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:52:33 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:52:33 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:52:33 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:53:59 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (7.0ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:53:59 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:53:59 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:53:59 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:53:59 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:53:59 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:53:59 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:53:59 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:53:59 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:53:59 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:53:59 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:54:33 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (4.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:54:33 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:54:33 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:54:33 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:54:33 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:54:33 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:54:33 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:54:33 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:54:33 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:54:33 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:54:33 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:56:03 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (4.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:56:03 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:56:03 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:56:03 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:56:03 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:56:03 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:56:03 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:56:03 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:56:03 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:56:03 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:56:03 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:59:10 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 1826ms (Views: 1825.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:59:12 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:59:12 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:59:12 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:59:12 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:59:12 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:59:12 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:59:12 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:59:12 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:59:12 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:59:12 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 19:59:47 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.9ms)
+  Rendered users/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 1928ms (Views: 1927.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 19:59:49 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 19:59:49 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 19:59:49 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 19:59:49 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 19:59:49 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 19:59:49 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 19:59:49 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 19:59:49 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 19:59:49 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 19:59:49 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:00:06 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/_recruiter_form.html.erb (2.8ms)
+  Rendered users/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 1969ms (Views: 1967.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:00:08 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:00:08 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:00:08 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:00:08 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:00:08 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:00:08 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:00:08 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:00:08 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:00:08 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:00:08 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:01:36 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (1.9ms)
+  Rendered users/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:01:36 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:01:36 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:01:36 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:01:36 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:01:36 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:01:36 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:01:36 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:01:36 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:01:36 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:01:36 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:02:03 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.5ms)
+  Rendered users/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:02:03 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:02:03 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:02:03 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:02:03 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:03 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:03 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:03 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:03 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:03 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:03 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:02:37 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:02:37 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:02:37 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:37 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:37 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:02:38 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:38 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:02:38 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:38 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:38 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:38 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:02:49 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (1.9ms)
+  Rendered users/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:49 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:02:49 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:02:49 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:49 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:49 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:02:49 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:49 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:49 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:02:49 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:02:49 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:03:09 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (1.8ms)
+  Rendered users/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:03:09 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:03:09 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:03:09 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:09 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:03:09 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:09 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:09 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:09 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:09 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:09 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:03:47 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.1ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (1.8ms)
+  Rendered users/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:03:47 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:03:47 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:03:47 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:47 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:47 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:03:47 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:47 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:47 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:47 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:47 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:03:53 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.3ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:03:53 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:53 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:53 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:53 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:53 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:03:53 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:53 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:03:53 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:03:53 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:03:53 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:04:11 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (1.9ms)
+  Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:11 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:11 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:11 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:11 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:11 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:11 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:11 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:11 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:11 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:11 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:04:26 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (5.0ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:26 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:26 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:26 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:26 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:26 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:26 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:27 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:27 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:27 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:27 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:04:36 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.3ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:36 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:36 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:36 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:36 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:36 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:36 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:36 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:36 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:36 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:36 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:04:45 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:45 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:45 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:45 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:45 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:45 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:45 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:45 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:45 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:04:45 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:04:45 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:06:05 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.2ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:06:05 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:06:05 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:06:05 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:06:05 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:06:05 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:06:05 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:06:05 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:06:05 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:06:05 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:06:05 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:07:09 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.2ms)
+  Rendered users/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:07:09 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:09 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:09 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:09 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:07:09 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:09 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:07:09 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:07:09 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:09 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:09 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:07:50 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (4.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.7ms)
+  Rendered users/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:07:50 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:07:50 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:50 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:50 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:50 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:07:50 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:50 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:07:50 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:50 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:50 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:07:58 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (1.9ms)
+  Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:07:58 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:07:58 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:58 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:07:58 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:58 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:58 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:58 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:58 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:07:58 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:07:58 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:08:28 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.9ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (4.0ms)
+  Rendered users/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:08:28 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:08:28 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:08:28 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:08:28 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:08:28 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:08:28 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:08:28 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:08:28 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:08:28 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:08:28 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:09:38 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.9ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.5ms)
+  Rendered users/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:09:38 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:09:38 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:09:38 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:09:38 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:09:38 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:09:38 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:09:38 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:09:38 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:09:38 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:09:38 -0300
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-09 20:09:56 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uOu3K4wR5a5/uOm6BVN313GK5ZTzyvcroE/QmgIbWM=", "user"=>{"name"=>"oicsdc", "email"=>"", "usertype"=>"2 - recruiter"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (2.1ms)
+  Rendered users/_company_form.html.erb (4.6ms)
+  Rendered shared/_error_messages.html.erb (1.4ms)
+  Rendered users/_recruiter_form.html.erb (4.2ms)
+  Rendered users/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 165ms (Views: 17.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:09:56 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:09:56 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:09:56 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:09:56 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:09:56 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:09:56 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:09:56 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:09:56 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:09:56 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:09:56 -0300
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-09 20:10:18 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uOu3K4wR5a5/uOm6BVN313GK5ZTzyvcroE/QmgIbWM=", "user"=>{"name"=>"Alex", "email"=>"alex@confrapar.com.br", "usertype"=>"1 - company"}, "commit"=>"Submit"}
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('alex@confrapar.com.br') LIMIT 1
+  [1m[36mSQL (74.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "updated_at", "usertype") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 09 Sep 2013 23:10:18 UTC +00:00], ["email", "alex@confrapar.com.br"], ["name", "Alex"], ["updated_at", Mon, 09 Sep 2013 23:10:18 UTC +00:00], ["usertype", "1 - company"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Completed 500 Internal Server Error in 128ms
+
+SyntaxError (/Users/ronaldobahia/ruby-sites/newjobcombo/app/mailers/user_mailer.rb:6: unknown regexp options - lcalht):
+  app/controllers/users_controller.rb:10:in `create'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered vendor/bundle/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-09 20:10:34 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uOu3K4wR5a5/uOm6BVN313GK5ZTzyvcroE/QmgIbWM=", "user"=>{"name"=>"Alex", "email"=>"alex@confrapar.com.br", "usertype"=>"1 - company"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('alex@confrapar.com.br') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered users/_company_form.html.erb (3.4ms)
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered users/_recruiter_form.html.erb (3.3ms)
+  Rendered users/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 73ms (Views: 15.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:10:35 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:10:35 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:10:35 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:10:35 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:10:35 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:10:35 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:10:35 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:10:35 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:10:35 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:10:35 -0300
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-09 20:10:49 -0300
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6uOu3K4wR5a5/uOm6BVN313GK5ZTzyvcroE/QmgIbWM=", "user"=>{"name"=>"Alex", "email"=>"alex@jobconvo.com.br", "usertype"=>"1 - company"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('alex@jobconvo.com.br') LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "updated_at", "usertype") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 09 Sep 2013 23:10:49 UTC +00:00], ["email", "alex@jobconvo.com.br"], ["name", "Alex"], ["updated_at", Mon, 09 Sep 2013 23:10:49 UTC +00:00], ["usertype", "1 - company"]]
+  [1m[36m (46.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/success
+Completed 302 Found in 60ms (ActiveRecord: 47.8ms)
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 20:10:49 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:10:49 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:10:49 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:10:49 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:10:49 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:10:49 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:10:49 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:10:49 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:10:49 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:10:49 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:10:49 -0300
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 20:12:23 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:23 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:23 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:23 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:23 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:23 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:23 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:23 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:23 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:23 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:23 -0300
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 20:12:34 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:34 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:34 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:34 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:34 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:34 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:34 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:34 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:34 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:34 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:34 -0300
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 20:12:49 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:50 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:50 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:50 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:50 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:50 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:50 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:50 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:50 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:50 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:50 -0300
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 20:12:56 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:56 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:56 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:56 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:56 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:56 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:56 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:56 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:12:56 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:56 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:12:56 -0300
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 20:13:07 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:13:07 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:13:07 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:13:07 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:13:07 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:13:07 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:13:07 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:13:07 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:13:07 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:13:07 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:13:07 -0300
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 20:13:55 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:13:56 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:13:56 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:13:56 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:13:56 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:13:56 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:13:56 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:13:56 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:13:56 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:13:56 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:13:56 -0300
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 20:14:08 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:14:08 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:14:08 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:14:08 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:14:08 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:14:08 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:14:08 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:14:08 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:14:08 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:14:08 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:14:08 -0300
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 20:14:51 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:14:51 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:14:51 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:14:51 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:14:51 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:14:51 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:14:51 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:14:51 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:14:51 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:14:51 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:14:51 -0300
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 20:15:06 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:15:06 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:15:06 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:15:06 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:15:06 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:15:06 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:15:06 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:15:06 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:15:06 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:15:06 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:15:06 -0300
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 20:15:41 -0300
+Processing by StaticController#success as HTML
+  Rendered static/success.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:15:42 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:15:42 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:15:42 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:15:42 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:15:42 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:15:42 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:15:42 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:15:42 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:15:42 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:15:42 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:16:24 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (4.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (4.1ms)
+  Rendered users/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:16:24 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:16:24 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:16:24 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:16:24 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:16:24 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:16:24 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:16:24 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:16:24 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:16:24 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:16:24 -0300
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 20:21:50 -0300
+Processing by StaticController#success as HTML
+  Rendered layouts/_facebookscript.html.erb (0.4ms)
+  Rendered layouts/_twitterscript.html.erb (0.4ms)
+  Rendered static/success.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:21:50 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:21:51 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:21:51 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:21:51 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:21:51 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:21:51 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:21:51 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:21:51 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:21:51 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:21:51 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (3.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (8.7ms)
+  Rendered users/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:22:42 -0300
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 20:23:31 -0300
+Processing by StaticController#success as HTML
+  Rendered layouts/_facebookscript.html.erb (0.1ms)
+  Rendered layouts/_twitterscript.html.erb (0.1ms)
+  Rendered static/success.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:23:31 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:23:31 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:23:31 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:23:31 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:23:31 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:23:31 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:23:31 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:23:31 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:23:31 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:23:31 -0300
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 20:23:47 -0300
+Processing by StaticController#success as HTML
+  Rendered layouts/_facebookscript.html.erb (0.1ms)
+  Rendered layouts/_twitterscript.html.erb (0.1ms)
+  Rendered static/success.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:23:47 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:23:47 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:23:47 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:23:47 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:23:47 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:23:47 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:23:47 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:23:47 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:23:47 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:23:47 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 20:25:50 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 20:25:50 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 20:25:50 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 20:25:50 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 20:25:50 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 20:25:50 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 20:25:50 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 20:25:50 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 20:25:50 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 20:25:50 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 20:25:50 -0300
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "usertype" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130909165013')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-09 22:43:06 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (23.4ms)
+  Rendered users/_company_form.html.erb (105.2ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.7ms)
+  Rendered users/new.html.erb within layouts/application (170.9ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+Completed 200 OK in 914ms (Views: 828.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-09-09 22:43:09 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 22:43:09 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 22:43:09 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 22:43:09 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 22:43:09 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 22:43:09 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 22:43:09 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 22:43:09 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 22:43:09 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 22:43:09 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 22:43:09 -0300
+
+
+Started GET "/success" for 127.0.0.1 at 2013-09-09 22:44:01 -0300
+Processing by StaticController#success as HTML
+  Rendered layouts/_facebookscript.html.erb (0.6ms)
+  Rendered layouts/_twitterscript.html.erb (0.5ms)
+  Rendered static/success.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-09 22:44:01 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-09 22:44:01 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-09 22:44:01 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-09 22:44:01 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-09 22:44:01 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-09 22:44:01 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-09 22:44:01 -0300
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2013-09-09 22:44:02 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 22:44:02 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 22:44:02 -0300
