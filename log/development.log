@@ -5369,3 +5369,265 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-09 22:44:02
 
 
 Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-09 22:44:02 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-10 15:03:16 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (40.6ms)
+  Rendered users/_company_form.html.erb (200.0ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.4ms)
+  Rendered users/new.html.erb within layouts/application (257.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+Completed 200 OK in 644ms (Views: 637.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-10 15:03:18 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (1.1ms)
+  Rendered users/_recruiter_form.html.erb (7.8ms)
+  Rendered users/new.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-10 15:03:18 -0300
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-09-10 15:03:18 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-10 15:03:18 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-10 15:03:18 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-10 15:03:18 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-10 15:03:18 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-10 15:03:18 -0300
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-09-10 15:03:18 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-10 15:03:18 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-10 15:03:18 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-10 15:03:18 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-10 15:03:18 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-10 15:06:10 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (16.4ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_recruiter_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (23.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+Completed 200 OK in 2312ms (Views: 2311.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-09-10 15:06:12 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-10 15:06:12 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-10 15:06:12 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-10 15:06:12 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-10 15:06:12 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-10 15:06:12 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-10 15:06:48 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (4.2ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.5ms)
+  Rendered users/new.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-10 15:06:49 -0300
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-09-10 15:06:49 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-10 15:06:49 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-10 15:06:49 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-10 15:06:49 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-10 15:06:49 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-10 15:09:36 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (6.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.1ms)
+  Rendered users/new.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+Completed 200 OK in 1869ms (Views: 1868.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-10 15:09:38 -0300
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-09-10 15:09:38 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-10 15:09:38 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-10 15:09:38 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-10 15:09:38 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-10 15:09:38 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-10 15:09:54 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (6.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-10 15:09:54 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-10 15:09:54 -0300
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-09-10 15:09:54 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-10 15:09:54 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-10 15:09:54 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-10 15:09:54 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-10 15:10:09 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.1ms)
+  Rendered users/new.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-10 15:10:09 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-10 15:10:09 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-10 15:10:09 -0300
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-09-10 15:10:09 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-10 15:10:09 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-10 15:10:09 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-10 15:11:21 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_company_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (3.9ms)
+  Rendered users/new.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-10 15:11:21 -0300
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-09-10 15:11:21 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-10 15:11:21 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-10 15:11:21 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-10 15:11:21 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-10 15:11:21 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-10 15:11:39 -0300
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_company_form.html.erb (4.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_recruiter_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-10 15:11:39 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-10 15:11:39 -0300
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-09-10 15:11:39 -0300
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-09-10 15:11:39 -0300
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-09-10 15:11:39 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-10 15:11:39 -0300

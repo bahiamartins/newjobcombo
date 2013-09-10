@@ -1,8 +1,10 @@
 <%= form_for(@user, :html => { :class => "companyForm"}) do |f| %>
+	</br>
 	<h2 style="color: #555">I want to hire a freelance recruiter</h2>
 	<%= render 'shared/error_messages', object: f.object %>
-	<%= f.text_field :name, :placeholder => "Enter your name" %>
-	<%= f.text_field :email, :placeholder => "Enter your email" %>
+	<%= f.text_field :name, :placeholder => "Enter your name", :class => "input-large" %>
+	<%= f.text_field :email, :placeholder => "Enter your email", :class => "input-large" %>
 	<%= f.hidden_field :usertype, :value => "1 - company" %>
-	<%= f.submit "Submit", class: "btn btn-success" %>
+	</br>
+	<%= f.submit "Sign up", class: "btn btn-success" %>
 <% end %>
