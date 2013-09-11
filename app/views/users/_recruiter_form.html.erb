@@ -1,10 +1,10 @@
 <%= form_for(@user, :html => { :class => "recruiterForm"}) do |f| %>
 	</br>
-	<h2 style="color: #555">I want to work as a recruiter</h2>
+	<h2 style="color: #555">Quero ser um especialista em recrutamento</h2>
 	<%= render 'shared/error_messages', object: f.object %>
-	<%= f.text_field :name, :placeholder => "Enter your name", :class => "input-large" %>
-	<%= f.text_field :email, :placeholder => "Enter your email", :class => "input-large" %>
-	<%= f.hidden_field :usertype, :value => "2 - recruiter" %>
+	<%= f.text_field :name, :placeholder => "Escreva seu nome", :class => "input-large" %>
+	<%= f.text_field :email, :placeholder => "Escreva seu email", :class => "input-large" %>
+	<%= f.hidden_field :usertype, :value => "2 - recrutador" %>
 	</br>
-	<%= f.submit "Sign up for early access", class: "btn btn-success" %>
+	<%= f.submit "Cadastrar já", class: "btn btn-success" %>
 <% end %>
