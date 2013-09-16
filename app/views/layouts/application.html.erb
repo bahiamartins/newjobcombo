@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <title>JobCombo | Contrate recrutadores</title>
-  <meta name="description" content="Contrate especialistas em recrutamento e seleção de forma fácil e rápida.">
+  <meta name="description" content="Cadastre-se na maior rede de especialistas em recrutamento do Brasil.">
   <meta name="keywords" content="vagas, recrutar, freelancer, oportunidades, RH, recrutamento, recruto, recrutamento social, jobcombo, sistema de recrutamento, psicologia, psicólogos, recursos humanos, recursos humanos online" />
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= stylesheet_link_tag    "bootstrap-responsive", media: "all", "data-turbolinks-track" => true %>
@@ -13,15 +13,29 @@
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="wrapper" class="container">
-		<div class="nav nav-pills pull-right" style="margin-top:10px;">
-			<li>
-				<%= link_to "BLOG", 'http://blog.jobcombo.com', style: "color:#997a00; font-weight:bold", target: "_blank" %>
-				<!--<a href="blog.jobcombo.com" target="_blank" style="color:#997a00; font-weight:bold">BLOG</a>-->
-			</li>
+	<div style="display: block; margin-bottom: 20px;">
+		<div class="navbar navbar-fixed-top">
+		      <div class="navbar-link">
+		        <div class="container">
+		          <div class="nav-collapse collapse">
+		            <ul class="nav pull-right">
+		              <li>
+		                <%= link_to "COMO FUNCIONA", '/about', style: "font-weight:bold" %>
+		              </li>
+		              <li>
+		                <%= link_to "BLOG", 'http://blog.jobcombo.com', style: "font-weight:bold", target: "_blank" %>
+		              </li>
+		            </ul>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
 		</div>
+	<div id="wrapper" class="container">
 		<div align="center" style="width:100%; height:auto; margin-top: 80px;">
-			<h1 class="custom-h1" style="display: inline; color: #555">JobCombo</h1>
+			<h1 class="custom-h1" style="display: inline;">
+				<%= link_to "JobCombo", '/', style: "text-decoration: none; color:#555" %>
+			</h1>
 		</div>
 		<hr>
 		<%= yield %>

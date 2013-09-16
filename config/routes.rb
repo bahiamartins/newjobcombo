@@ -5,6 +5,7 @@ Newjobcombo::Application.routes.draw do
 	
 	root :to => "users#new"
 	match 'success' => 'static#success', via: [:get, :post]
+	match 'about' => 'static#about', via: [:get]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
